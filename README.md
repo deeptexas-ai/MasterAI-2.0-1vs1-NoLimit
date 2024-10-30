@@ -26,4 +26,4 @@ Some technical bottlenecks are encountered when training the algorithm model wit
 
 ## Contact us
 
-The Master team is constantly exploring the innovation of AI algorithm, and hoping that like-minded technical experts from all over the world can communicate and exchange here, or join us to make MasterAI bigger and stronger together. Please feel free to contact us at masterai918@gmail.com 
+Telegram：@alibaba401
