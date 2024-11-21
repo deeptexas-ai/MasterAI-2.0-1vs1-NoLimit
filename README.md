@@ -26,4 +26,4 @@ Some technical bottlenecks are encountered when training the algorithm model wit
 
 ## Contact us
 
-Telegram：@alibaba401
+Telegram：@xuzongbin001
