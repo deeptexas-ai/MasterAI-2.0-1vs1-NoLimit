@@ -1,4 +1,4 @@
-# MasterAI-2.0-1vs1-NoLimit  出售德州AI源码和训练模型；联系Telegram：@xuzongbin001或E-mail：taibaibaba1314@gmail.com
+# MasterAI-2.0-1vs1-NoLimit  出售德州AI源码和训练模型；联系Telegram：@xuzongbin001或E-mail：masterai918@gmail.com
 
 ## Introduction
 
