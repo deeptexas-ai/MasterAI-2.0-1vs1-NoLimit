@@ -1,70 +1,37 @@
 <!doctype html>
-
 <html lang="en">
-
 <head>
-  <meta name="google-site-verification" content="rrp5Uvgzi-1-rMxUBfhV3wjlNrFqzwnqiA4e3qsOLEM" />
-
   <meta charset="utf-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Deep Hold'em AI Source Code</title>
-
-  <meta name="description" content="Texas Hold'em poker AI source code for CFR, MCCFR, GTO strategy analysis, equity calculation, range analysis, offline training, hand replay and poker AI research.">
-
-  <style>
-
-body{font-family:Arial,"Microsoft YaHei",sans-serif;margin:0;color:#161b22;background:#f6f8fa;line-height:1.65}
-
-header{background:#101828;color:white;padding:48px 20px}
-
-main{max-width:1080px;margin:0 auto;padding:30px 20px}
-
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
-
-.card{background:white;border:1px solid #d8dee4;border-radius:8px;padding:18px}
-
-.tag{display:inline-block;background:#eaf2ff;border:1px solid #c6dbff;border-radius:999px;padding:5px 9px;margin:3px}
-
-a{color:#0969da}footer{padding:24px 20px;text-align:center;color:#57606a;background:white;border-top:1px solid #d8dee4}
-
-
-    .screenshots { padding: 72px 24px; max-width: 1180px; margin: 0 auto; }
-    .screenshots h2 { font-size: 34px; margin: 0 0 12px; color: #0f172a; }
-    .screenshots p { color: #64748b; line-height: 1.75; margin: 0 0 28px; max-width: 860px; }
-    .screenshot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
-    .screenshot-grid figure { margin: 0; background: #fff; border: 1px solid #e5e7eb; border-radius: 18px; overflow: hidden; box-shadow: 0 16px 40px rgba(15,23,42,.10); }
-    .screenshot-grid img { width: 100%; height: auto; display: block; background: #f8fafc; }
-    .screenshot-grid figcaption { padding: 13px 15px; color: #475569; font-size: 14px; border-top: 1px solid #eef2f7; }
-
-  </style>
-
+  <meta name="google-site-verification" content="rrp5Uvgzi-1-rMxUBfhV3wjlNrFqzwnqiA4e3qsOLEM">
+  <title>Deep Hold'em AI Source Code | HUNL CFR Research</title>
+  <meta name="description" content="Open-source HUNL poker AI research code for CFR subgame solving, ReBeL-style recursive solving, self-play, value learning and C++ simulation.">
+  <link rel="canonical" href="https://deeptexas-ai.github.io/deep-holdem-ai/">
+  <link rel="alternate" hreflang="en" href="https://deeptexas-ai.github.io/deep-holdem-ai/">
+  <link rel="alternate" hreflang="zh-CN" href="https://deeptexas-ai.github.io/deep-holdem-ai/zh-cn/">
+  <link rel="alternate" hreflang="zh-TW" href="https://deeptexas-ai.github.io/deep-holdem-ai/zh-tw/">
+  <link rel="alternate" hreflang="x-default" href="https://deeptexas-ai.github.io/deep-holdem-ai/">
+  <meta property="og:title" content="Deep Hold'em AI Source Code">
+  <meta property="og:description" content="HUNL CFR, recursive solving, self-play and counterfactual-value research code.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deeptexas-ai.github.io/deep-holdem-ai/">
+  <meta property="og:image" content="https://deeptexas-ai.github.io/deep-holdem-ai/assets/screenshots/masterai-table.jpg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Deep Hold'em AI","codeRepository":"https://github.com/deeptexas-ai/deep-holdem-ai","programmingLanguage":["Python","C++"],"description":"HUNL poker AI research source code for CFR subgame solving, recursive solving, self-play and value learning."}</script>
 </head>
-
 <body>
-
-  <header><h1>Deep Hold'em AI Source Code</h1><p>Texas Hold'em poker AI research source code for CFR, GTO analysis, equity calculation, range analysis and offline training.</p></header>
-
-  <main><section class="grid"><div class="card"><h2>CFR Research</h2><p>CFR and MCCFR algorithms for imperfect-information poker strategy research.</p></div><div class="card"><h2>GTO Analysis</h2><p>Strategy evaluation, equilibrium approximation, exploitability and EV comparison.</p></div><div class="card"><h2>Equity Calculator</h2><p>Monte Carlo equity simulation, board analysis and range-vs-range evaluation.</p></div><div class="card"><h2>Offline Training</h2><p>Self-play training, hand replay, bot benchmarking and educational analysis.</p></div></section><section><h2>SEO Keywords</h2><p><span class="tag">Texas Holdem AI source code</span><span class="tag">CFR poker AI</span><span class="tag">GTO solver</span><span class="tag">equity calculator</span><span class="tag">poker AI research</span></p></section><p><a href="features.html">Features</a> | <a href="architecture.html">Architecture</a> | <a href="deployment.html">Deployment</a> | <a href="responsible-use.html">Responsible Use</a></p>
-
-<section class="screenshots" id="screenshots">
-  <h2>Product Screenshots / 产品截图</h2>
-  <p>Deep Holdem AI product interface preview, including poker AI research, CFR/GTO analysis, strategy training, range analysis and hand replay modules.</p>
-  <div class="screenshot-grid">
-    <figure><img src="assets/Screenshots/001.png" alt="Deep Holdem AI poker analysis dashboard screenshot" loading="lazy"><figcaption>Poker AI Analysis Dashboard</figcaption></figure>
-    <figure><img src="assets/Screenshots/002.png" alt="Deep Holdem AI strategy training interface screenshot" loading="lazy"><figcaption>Strategy Training Interface</figcaption></figure>
-    <figure><img src="assets/Screenshots/003.jpg" alt="Deep Holdem AI GTO and CFR research module screenshot" loading="lazy"><figcaption>GTO / CFR Research Module</figcaption></figure>
-    <figure><img src="assets/Screenshots/004.jpg" alt="Deep Holdem AI hand replay and range analysis screenshot" loading="lazy"><figcaption>Hand Replay & Range Analysis</figcaption></figure>
-    <figure><img src="assets/Screenshots/005.png" alt="Deep Holdem AI poker equity calculator and training result screenshot" loading="lazy"><figcaption>Equity Calculator & Training Result</figcaption></figure>
-  </div>
-</section>
-
-</main>
-
-  <footer>GitHub: <a href="https://github.com/deeptexas-ai/deep-holdem-ai">deeptexas-ai/deep-holdem-ai</a> | Telegram @xuzongbin001 | masterai918@gmail.com</footer>
-
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar"><nav class="nav"><a class="brand" href="./">Deep Hold'em AI</a><div class="nav-links"><a href="#capabilities">Capabilities</a><a href="#architecture">Architecture</a><a href="#evidence">Evidence</a><a class="lang" href="zh-cn/">简</a><a class="lang" href="zh-tw/">繁</a></div></nav></header>
+  <main id="main">
+    <section class="hero"><div class="hero-inner"><div><div class="eyebrow">Imperfect-information game research</div><h1>Build, train and study HUNL poker AI.</h1><p class="lead">A source-verified research stack for CFR subgame solving, ReBeL-style recursive solving, counterfactual value learning, self-play and C++ Monte Carlo components.</p><div class="actions"><a class="btn primary" href="https://github.com/deeptexas-ai/deep-holdem-ai">View source on GitHub</a><a class="btn secondary" href="#architecture">Explore architecture</a></div></div><figure class="hero-media"><img src="assets/screenshots/masterai-table.jpg" alt="Deep Hold'em AI historical poker table demonstration"><figcaption>Repository-provided historical table presentation; not evidence of third-party platform integration.</figcaption></figure></div></section>
+    <section class="proof"><div class="proof-inner"><div class="proof-item"><strong>HUNL</strong><span>Two-player no-limit engine</span></div><div class="proof-item"><strong>CFR</strong><span>Regret and strategy updates</span></div><div class="proof-item"><strong>Self-play</strong><span>Multiprocess data generation</span></div><div class="proof-item"><strong>Python + C++</strong><span>Learning and simulation stack</span></div></div></section>
+    <section class="section" id="capabilities"><h2>What the public source actually contains</h2><p class="section-intro">Every capability below maps to a visible module. Unsupported claims about OCR, automatic online play, one-click executables or guaranteed performance are intentionally excluded.</p><div class="grid"><article class="card"><div class="num">01 · GAME</div><h3>HUNL rules and state tree</h3><p>Cards, streets, blinds, terminal utilities, hand evaluation and an action abstraction from fold to all-in.</p></article><article class="card"><div class="num">02 · SOLVING</div><h3>CFR subgame solver</h3><p>Regret updates, average strategies, reach probabilities, best response, expected value and exploitability utilities.</p></article><article class="card"><div class="num">03 · RECURSION</div><h3>Belief-aware recursive solving</h3><p>Build subgames from public states, propagate private-hand beliefs and continue solving after sampled actions.</p></article><article class="card"><div class="num">04 · LEARNING</div><h3>Counterfactual value networks</h3><p>PyTorch models estimate leaf values and support configurable value and policy learning experiments.</p></article><article class="card"><div class="num">05 · DATA</div><h3>Self-play and replay</h3><p>Multiprocess generation, model synchronization, replay buffers, training batches and validation workflows.</p></article><article class="card"><div class="num">06 · NATIVE</div><h3>C++ Monte Carlo layer</h3><p>A native simulator and Python-binding foundation complement the Python game and learning modules.</p></article></div></section>
+    <section class="band" id="architecture"><div class="section"><h2>From public state to learned strategy</h2><p class="section-intro">The repository separates rules, solving and learning so each stage can be tested or extended independently.</p><div class="flow"><article><strong>1. Model the game</strong><p>The HUNL engine creates legal public states across preflop, flop, turn and river.</p></article><article><strong>2. Solve subgames</strong><p>CFR traversals update regret and average policy; value networks can estimate truncated leaves.</p></article><article><strong>3. Train from self-play</strong><p>Generated counterfactual-value and policy samples flow through replay into PyTorch models.</p></article></div></div></section>
+    <section class="section" id="evidence"><div class="showcase"><div><div class="eyebrow">Configuration evidence</div><h2>Research parameters are visible, not hidden behind marketing</h2><p class="section-intro">The original repository image shows iterations, regret settings, pruning, model paths and Redis configuration. It is correctly labeled here as a training configuration and terminal view.</p><div class="tag-row"><span class="tag">Iterations</span><span class="tag">Regret settings</span><span class="tag">Model paths</span><span class="tag">Redis</span></div></div><div><img src="assets/screenshots/training-config.png" alt="Deep Hold'em AI training configuration terminal" loading="lazy"><div class="caption">Original repository asset: training configuration and terminal output.</div></div></div></section>
+    <section class="section"><div class="showcase reverse"><div><img src="assets/screenshots/poker-table.jpg" alt="Deep Hold'em AI robot poker table demonstration" loading="lazy"><div class="caption">Historical demonstration material supplied by the repository.</div></div><div><div class="eyebrow">Table presentation</div><h2>A clear boundary between demonstration and verified capability</h2><p class="section-intro">The table image shows a robot seat and poker-table presentation. It does not prove recognition, automation or integration with any third-party service, so this page makes no such claim.</p></div></div></section>
+    <section class="section"><div class="notice"><h3>Responsible research only</h3><p>Use Deep Hold'em AI for lawful research, education, offline training and benchmarking. Do not use it for unauthorized real-time assistance, automated online play, rule evasion or unfair play.</p></div></section>
+  </main>
+  <section class="contact"><div class="contact-inner"><div><h2>Discuss research and source licensing</h2><p>Reference the repository and the module you are interested in.</p></div><div class="contact-links"><a class="btn primary" href="https://t.me/xuzongbin001">Telegram</a><a class="btn secondary" href="mailto:masterai918@gmail.com">Email</a></div></div></section>
+  <footer class="footer"><div class="footer-inner"><span>Deep Hold'em AI · HUNL research source</span><span><a href="https://github.com/deeptexas-ai/deep-holdem-ai">GitHub</a> · <a href="zh-cn/">简体中文</a> · <a href="zh-tw/">繁體中文</a></span></div></footer>
 </body>
-
 </html>
-

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>德州撲克AI原始碼：HUNL、CFR與ReBeL研究</title>
+  <meta name="description" content="德州撲克AI研究原始碼，包含HUNL引擎、CFR子博弈、ReBeL遞迴求解、反事實價值網路、自我博弈與C++蒙地卡羅元件。">
+  <link rel="canonical" href="https://deeptexas-ai.github.io/deep-holdem-ai/zh-tw/">
+  <link rel="alternate" hreflang="en" href="https://deeptexas-ai.github.io/deep-holdem-ai/">
+  <link rel="alternate" hreflang="zh-CN" href="https://deeptexas-ai.github.io/deep-holdem-ai/zh-cn/">
+  <link rel="alternate" hreflang="zh-TW" href="https://deeptexas-ai.github.io/deep-holdem-ai/zh-tw/">
+  <link rel="alternate" hreflang="x-default" href="https://deeptexas-ai.github.io/deep-holdem-ai/">
+  <meta property="og:title" content="德州撲克AI原始碼：HUNL、CFR與ReBeL研究"><meta property="og:description" content="由原始碼驗證的德州撲克AI研究框架：規則、求解、自我博弈與訓練。"><meta property="og:type" content="website"><meta property="og:image" content="https://deeptexas-ai.github.io/deep-holdem-ai/assets/screenshots/masterai-table.jpg">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="topbar"><nav class="nav"><a class="brand" href="../">Deep Hold'em AI</a><div class="nav-links"><a href="#features">原始碼功能</a><a href="#flow">演算法流程</a><a href="#screens">真實截圖</a><a class="lang" href="../">EN</a><a class="lang" href="../zh-cn/">简</a></div></nav></header>
+  <main id="main">
+    <section class="hero"><div class="hero-inner"><div><div class="eyebrow">德州撲克 AI · 不完全資訊賽局研究</div><h1>從 HUNL 規則到 CFR 自我博弈。</h1><p class="lead">由公開原始碼驗證的研究框架：CFR 子博弈、ReBeL 風格遞迴求解、反事實價值學習、自我博弈與 C++ 蒙地卡羅元件。</p><div class="actions"><a class="btn primary" href="https://github.com/deeptexas-ai/deep-holdem-ai">查看 GitHub 原始碼</a><a class="btn secondary" href="#features">了解技術模組</a></div></div><figure class="hero-media"><img src="../assets/screenshots/masterai-table.jpg" alt="Deep Hold'em AI 德州撲克牌桌歷史示範"><figcaption>倉庫既有牌桌示範素材；不代表已整合任何第三方平台。</figcaption></figure></div></section>
+    <section class="proof"><div class="proof-inner"><div class="proof-item"><strong>HUNL</strong><span>單挑無限注遊戲引擎</span></div><div class="proof-item"><strong>CFR</strong><span>遺憾與平均策略更新</span></div><div class="proof-item"><strong>自我博弈</strong><span>多程序資料生成</span></div><div class="proof-item"><strong>Python + C++</strong><span>訓練與模擬元件</span></div></div></section>
+    <section class="section" id="features"><h2>公開原始碼真正實作的能力</h2><p class="section-intro">每項能力都能對應到倉庫模組；不再使用無法證明的辨識率、回應速度、獲利提升、平台適配或一鍵安裝宣傳。</p><div class="grid"><article class="card"><div class="num">01 · 規則</div><h3>完整 HUNL 狀態模型</h3><p>52 張牌、四輪下注、盲注、終局收益、牌型評估，以及棄牌到全押的動作抽象。</p></article><article class="card"><div class="num">02 · 求解</div><h3>CFR 子博弈求解</h3><p>遺憾更新、平均策略、到達機率、最佳回應、期望值與可利用度相關工具。</p></article><article class="card"><div class="num">03 · 遞迴</div><h3>手牌信念傳播</h3><p>由公共狀態展開子博弈，依行動更新雙方私牌信念，並在後續狀態繼續求解。</p></article><article class="card"><div class="num">04 · 學習</div><h3>反事實價值網路</h3><p>使用 PyTorch 對截斷葉節點估值，支援價值與策略學習實驗。</p></article><article class="card"><div class="num">05 · 資料</div><h3>自我博弈與經驗回放</h3><p>多程序樣本生成、模型同步、回放緩衝、訓練批次與驗證流程。</p></article><article class="card"><div class="num">06 · 原生計算</div><h3>C++ 蒙地卡羅元件</h3><p>原生模擬器、Python 牌型工具與綁定基礎，補充 Python 演算法層。</p></article></div></section>
+    <section class="band" id="flow"><div class="section"><h2>玩法模型與演算法流程</h2><p class="section-intro">引擎涵蓋翻牌前、翻牌、轉牌與河牌。公共狀態記錄公共牌、累計下注、目前行動者、可行動作與加注次數。</p><div class="flow"><article><strong>1. 建立公共狀態</strong><p>遊戲引擎產生合法行動、後繼狀態、終局與手牌收益。</p></article><article><strong>2. CFR 遍歷子博弈</strong><p>迭代更新即時遺憾與平均策略，配置後可由價值網路估計葉節點。</p></article><article><strong>3. 自我博弈訓練</strong><p>反事實價值與策略樣本經回放系統進入 PyTorch 模型。</p></article></div></div></section>
+    <section class="section" id="screens"><div class="showcase"><div><div class="eyebrow">訓練配置實景</div><h2>參數、路徑與執行資訊來自原始素材</h2><p class="section-intro">圖片顯示訓練迭代、遺憾設定、剪枝、模型路徑與 Redis 連線；它是訓練配置/終端畫面，不是線上牌桌辨識介面。</p><div class="tag-row"><span class="tag">訓練迭代</span><span class="tag">遺憾設定</span><span class="tag">模型路徑</span><span class="tag">Redis</span></div></div><div><img src="../assets/screenshots/training-config.png" alt="Deep Hold'em AI 訓練配置終端截圖" loading="lazy"><div class="caption">倉庫既有素材：訓練配置與終端資訊。</div></div></div></section>
+    <section class="section"><div class="showcase reverse"><div><img src="../assets/screenshots/poker-table.jpg" alt="Deep Hold'em AI 機器人牌桌示範截圖" loading="lazy"><div class="caption">倉庫既有歷史示範素材。</div></div><div><div class="eyebrow">牌桌呈現</div><h2>將示範素材與已驗證能力清楚分開</h2><p class="section-intro">圖片展示機器人席位與牌桌呈現，但不能證明 OCR、自動操作或第三方平台整合，因此頁面不會作出這些聲明。</p></div></div></section>
+    <section class="section"><div class="notice"><h3>僅限負責任的研究用途</h3><p>用於合法研究、教育、離線訓練與基準測試。請勿用於未獲許可的線上即時決策、自動操作、規避平台規則或破壞公平性的行為。</p></div></section>
+  </main>
+  <section class="contact"><div class="contact-inner"><div><h2>交流研究與原始碼授權</h2><p>聯絡時請說明倉庫名稱與感興趣的技術模組。</p></div><div class="contact-links"><a class="btn primary" href="https://t.me/xuzongbin001">Telegram</a><a class="btn secondary" href="mailto:masterai918@gmail.com">Email</a></div></div></section>
+  <footer class="footer"><div class="footer-inner"><span>Deep Hold'em AI · 德州撲克 AI 研究原始碼</span><span><a href="https://github.com/deeptexas-ai/deep-holdem-ai">GitHub</a> · <a href="../">English</a> · <a href="../zh-cn/">简体中文</a></span></div></footer>
+</body></html>
